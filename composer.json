@@ -1,0 +1,42 @@
+{
+	"name": "metastore-mediawiki/mediawiki-ext-list",
+	"type": "mediawiki-extension",
+	"description": "",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://metastore.pro/",
+	"keywords": [
+		"mediawiki",
+		"meta"
+	],
+	"authors": [
+		{
+			"name": "Kitsune Solar",
+			"email": "kitsune.solar@gmail.com",
+			"homepage": "https://kitsune.solar/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "support@metastore.pro",
+		"issues": "https://gitlab.com/metastore/mediawiki/mediawiki-ext-list/issues",
+		"forum": "https://webmasters.community/",
+		"wiki": "https://webmasters.wiki/",
+		"source": "https://gitlab.com/metastore/mediawiki/mediawiki-ext-list"
+	},
+	"require": {
+		"composer/installers": "~1.0",
+		"metastore/mediawiki-ext-kernel": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"MW_EXT_List.class.php"
+		]
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false
+	},
+	"extra": {
+		"installer-name": "MW_EXT_List"
+	}
+}
