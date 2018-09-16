@@ -42,8 +42,9 @@ class MW_EXT_List {
 	 *
 	 * @param Parser $parser
 	 * @param string $type
+	 * @param string $style
 	 *
-	 * @return bool|string
+	 * @return null|string
 	 */
 	public static function onRenderTag( Parser $parser, $type = '', $style = '' ) {
 		// Argument: type.
